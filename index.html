@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEMP KORUNA, Zlatá Koruna — Kemp v přírodě</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">KEMP KORUNA, Zlatá Koruna</a>
+            <button class="nav__toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links">
+                <li><a href="index.html" class="active">Uvod</a></li>
+                <li><a href="ubytovani.html">Ubytovani</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="okoli.html">Okoli</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Overlay Menu -->
+        <div class="nav__overlay" id="nav-overlay">
+            <div class="nav__overlay-inner">
+                <a href="index.html" class="nav__overlay-link active">Uvod</a>
+                <a href="ubytovani.html" class="nav__overlay-link">Ubytovani</a>
+                <a href="galerie.html" class="nav__overlay-link">Galerie</a>
+                <a href="okoli.html" class="nav__overlay-link">Okoli</a>
+                <a href="kontakt.html" class="nav__overlay-link">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO — 100svh immersive with vignette -->
+    <header class="hero">
+        <div class="hero__media" style="background-image: url('img/foto_1.jpg')"></div>
+        <div class="hero__vignette"></div>
+        <div class="hero__gradient"></div>
+        <div class="hero__content" data-reveal>
+            <div class="hero__leaf-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L3.63 21.82A1 1 0 004.53 23h0a1 1 0 00.95-.68C6.42 19.8 8 14 17 8z"/><path d="M20.99 2.01S17.26 2.65 14 5c-2.07 1.5-3.66 3.6-4.52 6.01"/></svg>
+            </div>
+            <span class="hero__label">Kempování pod hvězdami</span>
+            <h1 class="hero__title">KEMP KORUNA, Zlatá Koruna</h1>
+            <p class="hero__sub">Zlatá Koruna 151, Zlatá Koruna, 38202</p>
+            <div class="hero__actions">
+                <a href="kontakt.html" class="btn btn--primary" data-magnetic>Rezervovat pobyt</a>
+                <a href="tel:+420 777 729 444" class="btn btn--ghost" data-magnetic>+420 777 729 444</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span class="hero__scroll-line"></span>
+        </div>
+    </header>
+
+    <!-- INTRO — Asymmetric Overlap -->
+    <section class="intro">
+        <div class="intro__image" data-reveal>
+            <img src="img/foto_2.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+        </div>
+        <div class="intro__body" data-reveal data-delay="0.15">
+            <span class="label">O nas</span>
+            <svg class="intro__ornament" width="64" height="24" viewBox="0 0 64 24" fill="none" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" opacity=".4">
+                <path d="M2 22 C10 18 14 10 18 4"/>
+                <path d="M18 4 C16 10 12 12 8 14"/>
+                <path d="M18 4 C22 8 20 14 16 18"/>
+                <path d="M22 22 C26 16 30 10 32 6"/>
+                <path d="M32 6 C34 10 38 16 42 22"/>
+                <path d="M46 22 C48 14 50 10 54 4"/>
+                <path d="M54 4 C52 10 48 14 44 16"/>
+                <path d="M54 4 C56 8 58 14 62 22"/>
+            </svg>
+            <div class="divider"></div>
+            <h2 class="h2"><em>Příroda na dosah ruky</em></h2>
+            <p>Má KEMP KORUNA v oblasti Český Krumlov volnou kapacitu? Podívejte se a zamluvte si termín ubytování!</p>
+            <a href="ubytovani.html" class="link-arrow">Prohlednout pokoje <span>&rarr;</span></a>
+        </div>
+    </section>
+
+    <!-- ACTIVITY CARDS — Circular Icons -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header section-header--center" data-reveal>
+                <span class="label">Aktivity</span>
+                <h2 class="h2" style="margin-top: 12px;">Co zde muzete zazit</h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card" data-reveal>
+                    <div class="activity-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21l4-10 4 10"/><path d="M12 11V3"/><path d="M2 18l4-4 4 4"/><path d="M14 18l4-4 4 4"/></svg>
+                    </div>
+                    <h3 class="activity-card__title">Přímo v přírodě</h3>
+                    <p>Stany, chatky nebo karavany — vyberte si svůj styl kempování.</p>
+                </div>
+                <div class="activity-card" data-reveal data-delay="0.06">
+                    <div class="activity-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-2.21 1.79-3 4-3h6c2.21 0 4 .79 4 3"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M12 18v4"/></svg>
+                    </div>
+                    <h3 class="activity-card__title">Sportovní vyžití</h3>
+                    <p>Volejbal, stolní tenis, hřiště — zábava pro všechny věkové skupiny.</p>
+                </div>
+                <div class="activity-card" data-reveal data-delay="0.12">
+                    <div class="activity-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+                    </div>
+                    <h3 class="activity-card__title">Sociální zázemí</h3>
+                    <p>Čisté sprchy, toalety a kuchyňka k dispozici 24/7.</p>
+                </div>
+                <div class="activity-card" data-reveal data-delay="0.18">
+                    <div class="activity-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-3 4-4 6-4s4 2 6 4 4 4 6 4 4-1 6-4"/><path d="M2 6c2-3 4-4 6-4s4 2 6 4 4 4 6 4 4-1 6-4"/><path d="M2 18c2-3 4-4 6-4s4 2 6 4 4 4 6 4 4-1 6-4"/></svg>
+                    </div>
+                    <h3 class="activity-card__title">U vody</h3>
+                    <p>Koupání, rybaření nebo jen posezení u břehu — léto jako z pohádky.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NATURE BREAK — Parallax Quote -->
+    <section class="nature-break" data-parallax>
+        <div class="nature-break__img" style="background-image: url('img/foto_5.jpg')" data-parallax-bg></div>
+        <div class="nature-break__overlay"></div>
+        <div class="nature-break__content" data-reveal>
+            <!-- Botanical separator -->
+            <svg class="nature-break__botanical" width="80" height="32" viewBox="0 0 80 32" fill="none" stroke="rgba(246,244,239,0.3)" stroke-width="0.8" stroke-linecap="round">
+                <path d="M20 28 C24 20 28 12 32 6"/>
+                <path d="M32 6 C30 14 26 18 22 22"/>
+                <path d="M32 6 C36 10 38 18 36 24"/>
+                <path d="M40 28 C42 18 46 10 48 6"/>
+                <path d="M48 6 C46 14 42 20 40 28"/>
+                <path d="M48 6 C52 10 56 18 60 28"/>
+            </svg>
+            <blockquote class="nature-break__quote">
+                Pod hvězdami spí nejlíp ten, kdo prožil den plný dobrodružství.
+            </blockquote>
+            <span class="nature-break__attr">&mdash; KEMP KORUNA, Zlatá Koruna</span>
+            <!-- Bottom botanical separator -->
+            <svg class="nature-break__botanical nature-break__botanical--bottom" width="80" height="32" viewBox="0 0 80 32" fill="none" stroke="rgba(246,244,239,0.3)" stroke-width="0.8" stroke-linecap="round">
+                <path d="M20 4 C24 12 28 20 32 26"/>
+                <path d="M32 26 C30 18 26 14 22 10"/>
+                <path d="M32 26 C36 22 38 14 36 8"/>
+                <path d="M40 4 C42 14 46 22 48 26"/>
+                <path d="M48 26 C46 18 42 12 40 4"/>
+                <path d="M48 26 C52 22 56 14 60 4"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- STATS — Watermark Style -->
+    <section class="stats">
+        <div class="stats__watermark">PRIRODA</div>
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stats__item" data-reveal>
+                    <span class="stats__number" data-count="15">0</span>
+                    <span class="stats__suffix">+</span>
+                    <span class="stats__label">let zkusenosti</span>
+                </div>
+                <div class="stats__item" data-reveal data-delay="0.1">
+                    <span class="stats__number" data-count="200">0</span>
+                    <span class="stats__suffix">+</span>
+                    <span class="stats__label">spokojenych hostu</span>
+                </div>
+                <div class="stats__item" data-reveal data-delay="0.2">
+                    <span class="stats__number" data-count="4.9" data-decimals="1">0</span>
+                    <span class="stats__suffix">&#9733;</span>
+                    <span class="stats__label">hodnoceni</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROOMS — Tilt Cards -->
+    <section class="section section--stone">
+        <div class="container">
+            <div class="rooms__head" data-reveal>
+                <div>
+                    <span class="label">Ubytovani</span>
+                    <h2 class="h2" style="margin-top: 12px;">Kde budete spat</h2>
+                </div>
+                <a href="ubytovani.html" class="link-arrow">Vsechny pokoje <span>&rarr;</span></a>
+            </div>
+            <div class="rooms-grid" style="perspective: 1000px;">
+                <div class="room-card" data-reveal data-tilt>
+                    <div class="room-card__image">
+                        <img src="img/foto_3.jpg" alt="Karavanové stání" loading="lazy">
+                        <div class="room-card__overlay"><span>Zobrazit detail</span></div>
+                    </div>
+                    <div class="room-card__body">
+                        <span class="label">Karavanové</span>
+                        <h3 class="h3">Karavanové stání</h3>
+                        <p>Zpevněná parcela · elektřina · přívod vody · odpad</p>
+                        <a href="kontakt.html" class="room-card__link">Rezervovat <span>&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="room-card" data-reveal data-delay="0.12" data-tilt>
+                    <div class="room-card__image">
+                        <img src="img/foto_4.jpg" alt="Chatka" loading="lazy">
+                        <div class="room-card__overlay"><span>Zobrazit detail</span></div>
+                    </div>
+                    <div class="room-card__body">
+                        <span class="label">Chatka</span>
+                        <h3 class="h3">Chatka</h3>
+                        <p>Dřevěná chatka · 2–4 lůžka · elektrická přípojka</p>
+                        <a href="kontakt.html" class="room-card__link">Rezervovat <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+        <div class="marquee__inner">
+            <span class="marquee__item">Kempování v přírodě</span>
+            <span class="marquee__sep">&#127807;</span>
+            <span class="marquee__item">Pod hvězdami</span>
+            <span class="marquee__sep">&#127807;</span>
+            <span class="marquee__item">Aktivní dovolená</span>
+            <span class="marquee__sep">&#127807;</span>
+            <span class="marquee__item">Letní pohoda</span>
+            <span class="marquee__sep">&#127807;</span>
+        </div>
+    </div>
+
+    <!-- GALLERY GRID — Masonry 2x3 -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-head" data-reveal>
+                <div>
+                    <span class="label">Galerie</span>
+                    <h2 class="h2" style="margin-top: 12px;">Nahlednete k&nbsp;nam</h2>
+                </div>
+                <a href="galerie.html" class="link-arrow">Cela galerie <span>&rarr;</span></a>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-grid__item gallery-grid__item--tall" data-reveal>
+                    <img src="img/foto_1.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+                <div class="gallery-grid__item" data-reveal data-delay="0.06">
+                    <img src="img/foto_6.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+                <div class="gallery-grid__item" data-reveal data-delay="0.12">
+                    <img src="img/foto_3.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+                <div class="gallery-grid__item" data-reveal data-delay="0.08">
+                    <img src="img/foto_7.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+                <div class="gallery-grid__item" data-reveal data-delay="0.14">
+                    <img src="img/foto_2.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+                <div class="gallery-grid__item" data-reveal data-delay="0.18">
+                    <img src="img/foto_4.jpg" alt="KEMP KORUNA, Zlatá Koruna" loading="lazy">
+                    <div class="gallery-grid__hover">
+                        <span class="gallery-grid__plus">+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="section section--stone">
+        <div class="container">
+            <div class="testimonial" data-reveal>
+                <span class="testimonial__mark">&ldquo;</span>
+                <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <blockquote class="testimonial__text">
+                    Nádherné místo, skvělí hostitelé. Klid, čistota a příjemná atmosféra. Určitě se vrátíme!
+                </blockquote>
+                <span class="testimonial__name">&mdash; Jan a Petra</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA — Full-bleed immersive -->
+    <section class="cta" data-parallax>
+        <div class="cta__media" style="background-image: url('img/foto_7.jpg')" data-parallax-bg></div>
+        <div class="cta__overlay"></div>
+        <div class="cta__content" data-reveal>
+            <div class="cta__leaf">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L3.63 21.82A1 1 0 004.53 23h0a1 1 0 00.95-.68C6.42 19.8 8 14 17 8z"/><path d="M20.99 2.01S17.26 2.65 14 5c-2.07 1.5-3.66 3.6-4.52 6.01"/></svg>
+            </div>
+            <span class="label label--light">Kempování pod hvězdami</span>
+            <h2 class="cta__title">Zažijte léto v přírodě</h2>
+            <div class="cta__actions">
+                <a href="kontakt.html" class="btn btn--primary" data-magnetic>Poslat poptavku</a>
+                <a href="tel:+420 777 729 444" class="btn btn--ghost" data-magnetic>Zavolat nam</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT STRIP -->
+    <div class="contact-strip">
+        <div class="contact-strip__item" data-reveal>
+            <span class="label label--accent">Telefon</span>
+            <a href="tel:+420 777 729 444">+420 777 729 444</a>
+        </div>
+        <div class="contact-strip__item" data-reveal data-delay="0.08">
+            <span class="label label--accent">E-mail</span>
+            <a href="mailto:stavebna@quick.cz">stavebna@quick.cz</a>
+        </div>
+        <div class="contact-strip__item" data-reveal data-delay="0.16">
+            <span class="label label--accent">Adresa</span>
+            <p>Zlatá Koruna 151, Zlatá Koruna, 38202</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">KEMP KORUNA, Zlatá Koruna</a>
+                    <p>Zlatá Koruna 151, Zlatá Koruna, 38202</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Uvod</a>
+                    <a href="ubytovani.html">Ubytovani</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="okoli.html">Okoli</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 KEMP KORUNA, Zlatá Koruna</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky bar -->
+    <div class="sticky-bar" id="sticky-bar">
+        <div class="sticky-bar__inner">
+            <span class="sticky-bar__name">KEMP KORUNA, Zlatá Koruna</span>
+            <div class="sticky-bar__actions">
+                <a href="tel:+420 777 729 444" class="sticky-bar__phone">+420 777 729 444</a>
+                <a href="kontakt.html" class="btn btn--sm">Rezervovat</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating phone button -->
+    <a href="tel:+420 777 729 444" class="fab" aria-label="Zavolat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+
+    <div class="mobile-cta">
+        <a href="kontakt.html" class="btn btn--full">Rezervovat</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

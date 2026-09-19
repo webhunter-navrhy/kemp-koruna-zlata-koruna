@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubytování — KEMP KORUNA, Zlatá Koruna</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <nav class="nav nav--solid" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">KEMP KORUNA, Zlatá Koruna</a>
+            <button class="nav__toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav__links">
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="ubytovani.html" class="active">Ubytování</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="okoli.html">Okolí</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-hero" style="background-image: url('img/foto_2.jpg')">
+        <div class="page-hero__overlay"></div>
+        <div class="page-hero__content">
+            <span class="label label--light">Naše nabídka</span>
+            <h1>Ubytování</h1>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container container--narrow">
+            <div class="intro-text" data-reveal>
+                <p>Má KEMP KORUNA v oblasti Český Krumlov volnou kapacitu? Podívejte se a zamluvte si termín ubytování!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="room-showcase">
+                <div class="room-showcase__item" data-reveal>
+                    <div class="room-showcase__image">
+                        <div class="img-wrap img-wrap--portrait"><img src="img/foto_3.jpg" alt="Pokoj" loading="lazy"></div>
+                    </div>
+                    <div class="room-showcase__body">
+                        <span class="label">Karavanové</span>
+                        <h3 class="h3">Karavanové stání</h3>
+                        <div class="room-showcase__divider"></div>
+                        <ul class="room-showcase__amenities">
+                            <li>Vlastní koupelna</li>
+                            <li>Wi-Fi zdarma</li>
+                            <li>TV s plochou obrazovkou</li>
+                            <li>Trezor</li>
+                        </ul>
+                        <a href="kontakt.html" class="btn btn--sm" data-magnetic>Rezervovat</a>
+                    </div>
+                </div>
+
+                <div class="room-showcase__item room-showcase__item--reverse" data-reveal>
+                    <div class="room-showcase__image">
+                        <div class="img-wrap img-wrap--portrait"><img src="img/foto_4.jpg" alt="Apartmán" loading="lazy"></div>
+                    </div>
+                    <div class="room-showcase__body">
+                        <span class="label">Chatka</span>
+                        <h3 class="h3">Chatka</h3>
+                        <div class="room-showcase__divider"></div>
+                        <ul class="room-showcase__amenities">
+                            <li>Vlastní koupelna</li>
+                            <li>Wi-Fi zdarma</li>
+                            <li>TV s plochou obrazovkou</li>
+                            <li>Rychlovarná konvice</li>
+                        </ul>
+                        <a href="kontakt.html" class="btn btn--sm" data-magnetic>Rezervovat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-header section-header--center" data-reveal>
+                <span class="label">Pro váš komfort</span>
+                <h2 class="h2" style="margin-top: 12px;">Vybavení &amp; služby</h2>
+            </div>
+            <div class="bento" data-reveal>
+                <div class="bento__item bento__item--lg">
+                    <img src="img/foto_5.jpg" alt="Interiér" loading="lazy">
+                </div>
+                <div class="bento__item bento__item--text">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <strong>Vysokorychlostní Wi-Fi</strong>
+                    <span>Po celém objektu zdarma</span>
+                </div>
+                <div class="bento__item bento__item--text">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    <strong>Parkování zdarma</strong>
+                    <span>Přímo u objektu</span>
+                </div>
+                <div class="bento__item bento__item--text">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="23 7 16 12 16 3 23 7"/></svg>
+                    <strong>Ručníky a povlečení</strong>
+                    <span>Čisté a voňavé při příjezdu</span>
+                </div>
+                <div class="bento__item bento__item--text">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 9V5a3 3 0 00-6 0v4"/><rect x="2" y="9" width="20" height="13" rx="2"/></svg>
+                    <strong>TV s plochou obrazovkou</strong>
+                    <span>V každém pokoji</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">KEMP KORUNA, Zlatá Koruna</a>
+                    <p>Zlatá Koruna 151, Zlatá Koruna, 38202</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="index.html">Úvod</a>
+                    <a href="ubytovani.html">Ubytování</a>
+                    <a href="galerie.html">Galerie</a>
+                    <a href="okoli.html">Okolí</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 KEMP KORUNA, Zlatá Koruna</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-cta">
+        <a href="kontakt.html" class="btn btn--full">Rezervovat</a>
+    </div>
+
+    <div class="sticky-bar" id="sticky-bar">
+        <div class="sticky-bar__inner">
+            <span class="sticky-bar__name">KEMP KORUNA, Zlatá Koruna</span>
+            <div class="sticky-bar__actions">
+                <a href="tel:+420 777 729 444" class="sticky-bar__phone">+420 777 729 444</a>
+                <a href="kontakt.html" class="btn btn--sm">Rezervovat</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="tel:+420 777 729 444" class="fab" aria-label="Zavolat">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
